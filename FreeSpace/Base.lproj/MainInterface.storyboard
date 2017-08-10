@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="FreeSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ssi-Rj-epC">
+                                <rect key="frame" x="10" y="23" width="260" height="2"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-QM-88Q">
+                                <rect key="frame" x="280" y="15" width="30" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="tZN-Iu-fWD">
+                                <rect key="frame" x="10" y="56" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="5g3-78-OfT">
+                                <rect key="frame" x="160.5" y="56.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="FBa-a4-hUq">
+                                <rect key="frame" x="310" y="56.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="U9M-QM-88Q" firstAttribute="leading" secondItem="Ssi-Rj-epC" secondAttribute="trailing" constant="10" id="0Bg-9F-O2f"/>
+                            <constraint firstAttribute="trailing" secondItem="U9M-QM-88Q" secondAttribute="trailing" constant="10" id="4Yo-IX-6wD"/>
+                            <constraint firstItem="Ssi-Rj-epC" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="9AB-wg-Dd1"/>
+                            <constraint firstItem="FBa-a4-hUq" firstAttribute="trailing" secondItem="U9M-QM-88Q" secondAttribute="trailing" id="GMp-vd-7Xb"/>
+                            <constraint firstItem="5g3-78-OfT" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="HBh-LO-QHe"/>
+                            <constraint firstItem="tZN-Iu-fWD" firstAttribute="leading" secondItem="Ssi-Rj-epC" secondAttribute="leading" id="RYy-uV-lKp"/>
+                            <constraint firstItem="5g3-78-OfT" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" multiplier="1.4" id="RpY-GO-pIq"/>
+                            <constraint firstItem="tZN-Iu-fWD" firstAttribute="centerY" secondItem="5g3-78-OfT" secondAttribute="centerY" id="t3I-EO-cDl"/>
+                            <constraint firstItem="FBa-a4-hUq" firstAttribute="centerY" secondItem="5g3-78-OfT" secondAttribute="centerY" id="tsX-4W-2Pj"/>
+                            <constraint firstItem="Ssi-Rj-epC" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" multiplier="0.6" id="uNo-ul-v3I"/>
+                            <constraint firstItem="U9M-QM-88Q" firstAttribute="centerY" secondItem="Ssi-Rj-epC" secondAttribute="centerY" id="z8R-uT-teT"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="80"/>
+                    <connections>
+                        <outlet property="freeSpaceLabel" destination="5g3-78-OfT" id="w9d-wz-S7E"/>
+                        <outlet property="freeSpaceProgressView" destination="Ssi-Rj-epC" id="cFs-1S-ejw"/>
+                        <outlet property="freeSpaceRateLabel" destination="U9M-QM-88Q" id="1rR-p7-1vh"/>
+                        <outlet property="totalSpaceLabel" destination="FBa-a4-hUq" id="kol-sB-A1W"/>
+                        <outlet property="usedSpaceLabel" destination="tZN-Iu-fWD" id="rfc-ZJ-ZhR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="36.881559220389811"/>
+        </scene>
+    </scenes>
+</document>
